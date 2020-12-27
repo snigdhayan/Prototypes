@@ -1,0 +1,3 @@
+# Prototypes
+
+The focus of this repository is to create a generic setup to enable rapid prototyping for technical demos and not necessarily to achieve the optimum machine learning performance. In the directory 'BreastCancerPrediction_Python_Flask' I created a flask app to serve a simple decision tree model diagnosing breast cancer as a REST service (simply execute the 'app.py' script). For portability I also included a dockerfile. In the directory 'BreastCancerPrediction_R_Plumber' I used plumber to expose a simple conditional inference tree based service via API (simply execute the 'app.R' script). They are both organized to achieve a loose coupling between machine learning and model serving.

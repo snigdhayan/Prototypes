@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "0ea87247-b7b2-451a-a145-7b98a9380598",
+		"name": "BreastCancerAnalysisViaR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PredictBreastCancerViaCondInfTree",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/predict?worst_concave_points=0.13&worst_perimeter=100&mean_concave_points=0.05",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"predict"
+					],
+					"query": [
+						{
+							"key": "worst_concave_points",
+							"value": "0.13"
+						},
+						{
+							"key": "worst_perimeter",
+							"value": "100"
+						},
+						{
+							"key": "mean_concave_points",
+							"value": "0.05"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
