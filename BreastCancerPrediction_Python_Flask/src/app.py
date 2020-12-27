@@ -15,8 +15,8 @@ def predict():
         data = request.args
         prediction = model.predict([np.array(list(data.values()))])
         probability = model.predict_proba([np.array(list(data.values()))])     
-    else:
-        data = request.get_json(force=True) # also support json in body via POST and PUT
+    else: # also support json in body via POST and PUT
+        data = request.get_json(force=True)
         prediction = model.predict([np.array(list(data.values()))])
         probability = model.predict_proba([np.array(list(data.values()))])
 
@@ -27,4 +27,4 @@ def predict():
     return jsonify(output)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',debug=True)
+    app.run(host='0.0.0.0',debug=True) # make the service reachable from outside, if containerized

@@ -5,4 +5,4 @@ library(plumber)
 pr <- plumb("./plumber.R")
 pr$run(port=8000, swagger = TRUE)
 
-# pr$run(host = '0.0.0.0', port=8000, swagger = TRUE) # needed for dockerization
+# pr$run(host = '0.0.0.0', port=8000, swagger = TRUE) # make the service reachable from outside, if containerized
