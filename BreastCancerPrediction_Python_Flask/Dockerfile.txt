@@ -15,5 +15,4 @@ COPY ./src/ .
 
 # while spinning up the container execute
 ENTRYPOINT ["python"]
-CMD ["./mlScript.py"]
 CMD ["./app.py"]
