@@ -27,4 +27,4 @@ def predict():
     return jsonify(output)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True) # make the service reachable from outside, if containerized
+    app.run(host='0.0.0.0', port=5000, debug=True) # make the service reachable from outside, if containerized
