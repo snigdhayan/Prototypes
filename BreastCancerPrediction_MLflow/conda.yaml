@@ -1,0 +1,14 @@
+name: breast_cancer_analysis
+channels:
+  - defaults
+  - anaconda
+  - conda-forge
+dependencies:
+  - python=3.9
+  - flask
+  - numpy
+  - pandas
+  - scikit-learn
+  - pip
+  - pip:
+    - mlflow>=1.9.0
