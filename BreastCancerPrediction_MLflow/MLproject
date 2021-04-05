@@ -1,4 +1,4 @@
-name: BreastCancerAnalysis
+name: breast_cancer_analysis
 
 conda_env: conda.yaml
 

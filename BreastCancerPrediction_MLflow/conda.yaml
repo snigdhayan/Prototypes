@@ -4,11 +4,11 @@ channels:
   - anaconda
   - conda-forge
 dependencies:
-  - python=3.9
-  - flask
-  - numpy
-  - pandas
-  - scikit-learn
+  - python=3.7
+  - flask=1.1.2
+  - numpy=1.19.2
+  - pandas=1.1.5
+  - scikit-learn=0.23.2
   - pip
   - pip:
-    - mlflow>=1.9.0
+    - mlflow=1.9.0
